@@ -16,7 +16,7 @@ set n3 [$ns node]
 
 $ns duplex-link $n0 $n2 2Mb 10ms DropTail
 $ns duplex-link $n1 $n2 2Mb 10ms DropTail
-$ns duplex-link $n2 $n3 [lindex $argv 0] 15ms DropTail
+$ns duplex-link $n2 $n3 2Mb 15ms DropTail
 
 $ns duplex-link-op $n0 $n2 orient right-down
 $ns duplex-link-op $n1 $n2 orient right-up
